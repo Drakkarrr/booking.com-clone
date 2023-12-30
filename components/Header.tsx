@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { useState } from 'react';
+import { Bars3Icon } from '@heroicons/react/16/solid';
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState<boolean>(false);
