@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { Fragment, useState } from 'react';
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+import { Bars3Icon } from '@heroicons/react/24/outline';
 import {
   ChatBubbleLeftIcon,
   ChevronDownIcon,
@@ -11,8 +11,7 @@ import {
   PhoneIcon,
   PlayCircleIcon,
 } from '@heroicons/react/20/solid';
-import { Dialog, Disclosure, Popover, Transition } from '@headlessui/react';
-import { cn } from '@/lib/utils';
+import { Popover, Transition } from '@headlessui/react';
 
 const products = [
   {
