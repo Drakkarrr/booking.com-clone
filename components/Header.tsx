@@ -2,8 +2,10 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
+import { useState } from 'react';
 
 const Header = () => {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState<boolean>(false);
   return (
     <div className='bg-[#013B94]'>
       <nav
@@ -18,6 +20,16 @@ const Header = () => {
               alt=''
             />
           </Link>
+        </div>
+
+        <div className='flex lg:hidden'>
+          <button
+            type='button'
+            className='-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white'
+            onClick={() => setMobileMenuOpen(true)}>
+            <span className='sr-only'>Open main menu</span>
+            <Bars3Icon className='w-6 h-6' aria-hidden='true' />
+          </button>
         </div>
       </nav>
     </div>
