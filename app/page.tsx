@@ -1,3 +1,3 @@
 export default function Home() {
-  return <h1>Booking clone</h1>;
+  return <header className='bg-[#3e73c3]'>Booking</header>;
 }
