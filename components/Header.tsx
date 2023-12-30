@@ -1,9 +1,39 @@
 'use client';
 
 import Link from 'next/link';
-import Image from 'next/image';
-import { useState } from 'react';
-import { Bars3Icon } from '@heroicons/react/16/solid';
+import { Fragment, useState } from 'react';
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+import {
+  ChatBubbleLeftIcon,
+  ChevronDownIcon,
+  HomeIcon,
+  PaperAirplaneIcon,
+  PhoneIcon,
+  PlayCircleIcon,
+} from '@heroicons/react/20/solid';
+import { Dialog, Disclosure, Popover, Transition } from '@headlessui/react';
+import { cn } from '@/lib/utils';
+
+const products = [
+  {
+    name: 'Book a Stay',
+    description: 'Get a better understanding of your traffic',
+    href: '#',
+    icon: HomeIcon,
+  },
+  {
+    name: 'Book a Flight',
+    description: 'Speak directly to your customers',
+    href: '#',
+    icon: PaperAirplaneIcon,
+  },
+  {
+    name: 'Contact our Support Team',
+    description: 'Your customers’ data will be safe and secure',
+    href: '#',
+    icon: ChatBubbleLeftIcon,
+  },
+];
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState<boolean>(false);
