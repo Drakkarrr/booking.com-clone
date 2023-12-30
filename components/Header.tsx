@@ -35,6 +35,11 @@ const products = [
   },
 ];
 
+const callsToAction = [
+  { name: 'See Demo Booking', href: '#', icon: PlayCircleIcon },
+  { name: 'Contact Support', href: '#', icon: PhoneIcon },
+];
+
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState<boolean>(false);
   return (
