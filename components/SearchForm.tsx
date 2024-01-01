@@ -1,4 +1,9 @@
+'use client';
+
 import * as z from 'zod';
+import { zodResolver } from '@hookform/resolvers/zod';
+import { useForm } from 'react-hook-form';
+import { useRouter } from 'next/navigation';
 
 export const formSchema = z.object({
   location: z.string().min(2).max(50),
@@ -21,6 +26,22 @@ export const formSchema = z.object({
 });
 
 const SearchForm = () => {
+  const router = useRouter();
+
+  const form = useForm<z.infer<typeof formSchema>>({
+    resolver: zodResolver(formSchema),
+    defaultValues: {
+      location: '',
+      dates: {
+        from: undefined,
+        to: undefined,
+      },
+      adults: '1',
+      children: '0',
+      rooms: '1',
+    },
+  });
+
   return <div>SearchForm</div>;
 };
 
