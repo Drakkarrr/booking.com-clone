@@ -6,7 +6,7 @@ export default function Home() {
       <section className='p-6 mx-auto max-w-7xl'>
         <h2 className='text-5xl font-bold text-white'>Find your Next Stay</h2>
         <h3 className='py-5 text-xl text-white'>
-          Search low prices on hotels, homes and much more...
+          Search low prices on hotels, homes and much more
         </h3>
       </section>
 
