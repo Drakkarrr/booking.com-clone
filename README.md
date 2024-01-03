@@ -4,7 +4,7 @@ This is a simple booking website to book flights and hotels using oxylabs to scr
 
 ![Landing page](./screenshots/landing.png)
 ![Loading while fetching data](./screenshots/loading.png)
-![Results page](./screenshots/results.png.png)
+![Results page](./screenshots/results.png)
 
 ## Run the project
 
